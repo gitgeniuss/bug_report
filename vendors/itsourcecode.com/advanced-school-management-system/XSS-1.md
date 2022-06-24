@@ -1,5 +1,5 @@
 # Advanced School Management System v1.0 by itsourcecode.com has Cross-site Scripting (XSS)
-**Vul_Author: Liyuan Jis**
+**Vul_Author: Liyuan Ji**
 
 Login account: suarez081119@gmail.com/12345 (Super Admin account)
 
@@ -29,12 +29,21 @@ Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
 ```
+
 We click the subject interface and edit it.
+
 ![](4.png)
+
 XSS script that writes the burst cookie.
+
 ![](5.png)
+
 After we update, click subject again.
+
 ![](2.png)
+
 We have obtained the cookie.
+
 It can be seen from the source code that it is an XSS attack using SQL injection vulnerability.
+
 ![](3.png)
